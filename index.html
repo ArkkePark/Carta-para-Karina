@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400..700&family=Delius&family=Gorditas:wght@400;700&family=Luckiest+Guy&family=Prata&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="https://images.vexels.com/media/users/3/182156/isolated/preview/c0a9e86fd877f8970715f38b0c6508ca-carta-de-amor-com-adesivo-de-coracao-colorido.png" type="image/x-icon"
+    <meta charset="UTF-8">
+    <title>Carta Romântica</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #f1a193,#ffbbaf,#a1fa79, #91b97f);
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .carta {
+            background-color: #fff0f5;
+            border: 2px solid #15ff00;
+            border-radius: 20px;
+            padding: 38px;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            font-size: 17px;
+            line-height: 35px; /* Ajustado para casar com as linhas de fundo */
+            background-image: repeating-linear-gradient(
+                to bottom,
+                transparent,
+                transparent 30px,
+                rgba(0, 0, 0, 0.1) 31px
+            );
+            background-size: 100% 32px; /* Altura da linha de fundo igual ao line-height */
+        }
+        .prata-regular {
+            font-family: "Prata", serif;
+            font-style: normal;
+            font-weight: 20;
+        }
+        .Texto {
+            font-family: "Delius", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: #012701;
+        }
+
+        .fonte-especial {
+            color: #012701;
+            font-family: "Cookie", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .header {
+            font-family: "Gorditas", serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            color: #012701;
+            margin-bottom: 30px;
+            font-size: 2.5em; 
+        }        
+
+        .carta::before {
+            content: "💌";
+            font-size: 50px;
+            position: absolute;
+            top: 2px;
+            left: -19px;
+            transform: rotate(-10deg);
+        }
+
+        h1 {
+            text-align: center;
+            color: #b22222;
+            margin-bottom: 24px;
+        }
+
+        p {
+            margin: 0;
+            text-align: justify;
+            font-size: 28px;
+        }
+
+        .assinatura {
+            margin-top: 40px;
+            font-size: 25px;
+            text-align: right;
+            font-style: italic;
+            color: #b22222;
+        }
+        .section {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #entrada {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(https://i.postimg.cc/tJHqnM40/foto-de-fundo-removebg-preview-removebg-preview.png);
+            background-position: flex;
+            background-size:cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            transition: opacity 0.5s ease;
+        }
+
+        #entrada button {
+            height: auto;
+            width: auto;
+            padding: 20px 40px;
+            font-size: 70px;
+            background: linear-gradient(to right, #ff7b7b, #962b2b) ;
+            border: 2px black;
+            color: #ebe8e8;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .caixa-central {
+            background-color: #bfb7b7;/* tom suave */
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(250, 0, 0, 0.774);
+            display: flex;
+            border:3px #121212;
+            color:#012701;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }        
+
+        #entrada button:hover {
+            background: linear-gradient(to right, #962b2b, #ff7b7b) ;
+        }
+        .entrada-botoes {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 25px;
+        }
+        #conteudo {
+            display: none;
+            padding: 0px;
+        }
+        .link-disfarcado {
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .link-disfarcado.animado {
+            background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff, #ff0000);
+            background-size: 600% 600%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rgbMove 5s linear infinite;
+        }
+
+        @keyframes rgbMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        </style>
+</head>
+<body>
+<div id="entrada">
+    <div class="caixa-central">
+        <h1 class="fonte-especial" style="text-align: center; color:#012701; font-size: 40px;">Uma carta de Douglas Eduardo para Karina Aparecida❤️ </h1>
+        <p class="texto" style="font-size: 22px;">Eu fiz com bastante carinho, espero que goste!</p>
+        <div class="entrada-botoes">
+            <button onclick="entrar()"><img src="https://i.postimg.cc/qBxwnnHy/Carta-aberta.png"></button>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="conteudo">
+    <div class="carta">
+        <h1>❤️Obrigado por estar comigo!❤️</h1>
+
+        <p>
+            ==================================
+            <br>
+            Este site foi feito com muito carinho e
+            inteiramente dedicado a
+            Karina Aparecida de Oliveira. Bom, como podemos começar...<br><br>
+            Eu decidi fazer algo bem diferente dessa vez, eu 
+            sou um pouco lezado e um pouco idiota as vezes,
+            mas apezar disso, sei que você me ama e eu te amo muitissimo, 
+            conhecendo seu jeito bricalhona você deva estar agora falando que não, enquanto lê isso, eu 
+            retruco dizendo de volta que amo sim, digo mais, não importa onde estou, minha tristeza e meus medos vão embora quando estou com você. ❤️<br><br>
+            Quero fazer isso direito, então aqui eu vou dizer alguns motivos que me fazem te amar e me fazem ver você como  uma donzela fabulosa, que apelido internamente como <a href="https://i.postimg.cc/Y0L4tLWH/0a4f4224-474d-4a4f-b900-e8d8ca33e601.png" class="link-disfarcado" id="rainha-link" target="_blank">minha rainha:</a><br><br>
+            <p>🌸Primeiro você é incrivel<br> Você com certeza é muito humilde com uma empatia e dedicação de alto nivel. Sempre que acontece um problema ou um deslize de outros, você sempre estende o seu braço, uma pessoa muito bondosa de coração gentil. Eu adimiro sua personalidade e você como um todo.<br><br>
+             😻Eu amo seu carinho<br> Amo quando suas mãos me tocam, mas eu amo mais ainda fazer carinho em você, seu cabelo é o melhor de todos. Além de ser o mais bonito, sem duvidas nenhuma.<br><br>
+             🫡Nos somos estranhos<br> Isso provavelmente é oque muita gente acha, tanto em gostos quanto no nosso jeito, eu amo saber que a nossa loucura combina eu amo isso profundamente. ❤️<br><br>
+             🧠Você é bem firme <br> Pra mim você é uma das pessoas com os melhores ideais que eu já vi, você sabe diferenciar bem quem ta errado, quem ta certo, e sabe como a pessoa deve fazer pra melhorar, graças a você eu quero melhorar por mim, e com ti quero viver.<br><br>
+             🥂Eu amo sair com você<br> Seja pra tomar um precioso, açaícaro, sorvetaru ou só comprar umas coisas no mercado e comer em algum lugar, relaxar com você é otimo e tenho memórias muito boas desse tempo, des de uma das primeiras vezes que saimos pro parque e jogamos uno no banco.<br><br>
+             👑<a href="https://i.postimg.cc/qvNGQ0Ky/Drawing.png" class="link-disfarcado" onmousedown="style='color:red'" target="_blank">Você é muito  linda</a><br> você tem um rosto maravilhoso, uma moça muito inteligente, engraçada e carismatica, além de dedicada em qualquer coisas que você se proponha, fisicamente e mentalmente você é considerada de fato uma rainha. Ao meu ver, resta só sua coroa.<br><br>
+             🤗Eu amo seu abraço<br> Sentir seu cheiro é com certeza a melhor sensação quando te abraço, <a href="https://i.postimg.cc/BZjNjh5q/524b714c-8021-4a1d-b84e-b8ee5c1df617.png" class="link-disfarcado" onmousedown="style='color:red'" target="_blank">você é muito cheirosa</a> e as vezes não é nem seu perfume, seu cheiro em si me encanta, e quando perfurmada é um jardim de rosas completo.<br><br>
+             🎤🎶Sua voz é encantadora<br> Você canta muito bem quando você não faz por graça, por mais que você não acredite nessa afirmação é verdade, você tem uma voz maravilhosa e quando você canta é melhor que muitas melodias que eu já ouvi. <br><br>
+             🎬Amo assistir filme com você<br> Seja no cinema, seja em casa, seja deitados juntos abraçados, pra mim o melhor clima é você do meu lado, idependente do qual ruim o filme sua companhia faz ele parecer muito melhor do que ele era, exemplo é "O macaco" skks.<br><br>
+             🎉✨Quando a gente se diverte junto<br>Quando estamos juntos vez ou outra eu estou sorrindo de repente, nessas horas oque mais passa pela minha cabeça é "Uau eu sou muito sortudo por ter conhecido essa garota maravilhosa." Você é com certeza a melhor coisa que já me aconteceu, muito obrigado por ter me aceitado do jeito que eu sou. ❤️
+            </p><br>
+            <p>Enfim vou ficar por aqui, eu ainda quero fazer algo de "motivos pra te amar", ainda é um desejo futuro fazer isso pra voçê, por fim dessa carta, eu realmente gosto muito de você. Espero ter feito isso certo, se alguma coisa te incomodar me avise, não só no site ou na carta, eu falo em qualquer coisa que eu fizer ou disser, espero que tenha gostado, <a href="https://i.postimg.cc/76mYq20t/image.png" class="link-disfarcado" onmousedown="style='color:red'" target="_blank"> eu te amo Karina ❤️.</a>  </p>
+            </p>
+            <p>==================================
+        </p>
+        <br><br>
+        <p style="font-size: 19px; color:#012701">Tem um total de 4 coisas nesse monte de palavras que te levam a fotos fofas de nós 2, a dica para acha-las é: As coisas que eu mais te falo, aperte na palavra ou frase que você achar, ela mudara de cor e te levara a um outro lugar.</p>
+        <p style="font-size: 12px; color:#c0ecc0">!A palavra ou frase não possui relação com a imagem aparente!</p>
+        <div class="assinatura">
+            Com amor,<br>
+            Douglas Eduardo Ferreira Andrade
+        </div>
+    </div>
+</div>
+        <script>
+        function entrar() {
+        document.getElementById("entrada").style.opacity = "0";
+        setTimeout(() => {
+            document.getElementById("entrada").style.display = "none";
+            document.getElementById("conteudo").style.display = "block";
+        }, 500); // mesmo tempo da transição no CSS
+        }
+            document.getElementById("rainha-link").addEventListener("click", function () {
+        this.classList.add("animado");
+        });
+        
+        function sumir() {
+        const botao = document.getElementById("nao-btn");
+        botao.classList.add("sumir-suave");
+        setTimeout(() => {
+            botao.style.display = "none";
+        }, 500); // tempo correspondente à animação CSS
+        }
+        </script>
+</body>
+</html>
