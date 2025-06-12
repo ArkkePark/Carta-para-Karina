@@ -157,6 +157,16 @@
             display: none;
             padding: 0px;
         }
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
         .link-disfarcado {
             color: inherit;
             text-decoration: none;
@@ -168,6 +178,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: rgbMove 5s linear infinite;
+        }
+        #casa {
+            display: none;
         }
 
         @keyframes rgbMove {
@@ -206,7 +219,7 @@
             sou um pouco lezado e um pouco idiota as vezes,
             mas apezar disso, sei que você me ama e eu te amo muitissimo, 
             conhecendo seu jeito bricalhona você deva estar agora falando que não, enquanto lê isso, eu 
-            retruco dizendo de volta que amo sim, digo mais, não importa onde estou, minha tristeza e meus medos vão embora quando estou com você. ❤️<br><br>
+            retruco dizendo de volta que amo sim, digo mais, não importa onde estou, minha tristeza e meus medos vão embora quando você está presente tudo se clareia e tudo melhora. ❤️<br><br>
             Quero fazer isso direito, então aqui eu vou dizer alguns motivos que me fazem te amar e me fazem ver você como  uma donzela fabulosa, que apelido internamente como <a href="https://i.postimg.cc/Y0L4tLWH/0a4f4224-474d-4a4f-b900-e8d8ca33e601.png" class="link-disfarcado link-secreto" id="rainha-link" target="_blank">minha rainha:</a><br><br>
             <p>🌸Primeiro você é incrivel<br> Você com certeza é muito humilde com uma empatia e dedicação de alto nivel. Sempre que acontece um problema ou um deslize de outros, você sempre estende o seu braço, uma pessoa muito bondosa de coração gentil. Eu adimiro sua personalidade e você como um todo.<br><br>
              😻Eu amo seu carinho<br> Amo quando suas mãos me tocam, mas eu amo mais ainda fazer carinho em você, seu cabelo é o melhor de todos. Além de ser o mais bonito, sem duvidas nenhuma.<br><br>
@@ -219,7 +232,7 @@
              🎬Amo assistir filme com você<br> Seja no cinema, seja em casa, seja deitados juntos abraçados, pra mim o melhor clima é você do meu lado, idependente do filme sua companhia faz ele parecer muito melhor do que ele era, sua existência é minha felicidade.<br><br>
              🎉✨Quando a gente se diverte junto<br>Quando estamos juntos vez ou outra eu estou sorrindo de repente, nessas horas oque mais passa pela minha cabeça é "Uau eu sou muito sortudo por ter conhecido essa garota maravilhosa." Você é com certeza a melhor coisa que já me aconteceu, muito obrigado por ter me aceitado do jeito que eu sou. ❤️
             </p><br>
-            <p>Enfim vou ficar por aqui, eu ainda quero fazer algo de "motivos pra te amar", ainda é um desejo futuro fazer isso pra voçê, por fim dessa carta, eu realmente gosto muito de você. Espero ter feito isso certo, se alguma coisa te incomodar me avise, não só no site ou na carta, eu falo em qualquer coisa que eu fizer ou disser, espero que tenha gostado, <a href="https://i.postimg.cc/76mYq20t/image.png" class="link-disfarcado link-secreto" id="teamo-link" target="_blank"> eu te amo Karina ❤️.</a>  </p>
+            <p>Enfim vou ficar por aqui, eu ainda quero fazer algo de "motivos pra te amar", ainda é um desejo futuro fazer isso pra voçê, por fim dessa carta, eu realmente gosto muito de você. Espero ter feito isso certo, se alguma coisa te incomodar me avise, não só no site ou na carta, eu falo em qualquer coisa que eu fizer ou disser, espero que tenha gostado, <a href="https://i.postimg.cc/76mYq20t/image.png" class="link-disfarcado link-secreto" id="teamo-link" target="_blank"> eu te amo Karina. ❤️</a>  </p>
             </p>
             <p>==================================
         </p>
@@ -229,10 +242,10 @@
             <div id="mensagem-final" style="display:none; margin-top: 50px; font-size: 24px; color: #0c3808; text-align: center; font-family: 'Cookie', cursive;">
                 💌 Você encontrou todos os segredos...  
                 <br><br>
-                <a href="https://i.postimg.cc/ZRrDm3hQ/image.png" class="link-disfarcado" id="especial-link">✨ Karina, essa carta é só um pedacinho do quanto eu te amo!</a> ❤️
+                <a href="https://i.postimg.cc/jjX3hmrg/Untitled-design.png" class="link-disfarcado" id="especial-link">✨ Karina, essa carta é só um pedacinho do quanto eu te amo!❤️</a> 
                 <br><br><p> *Tem mais uma ultima imagem na frase acima, após clicar nela você tera que abrir o site todo denovo se quiser ver mais, então tenha certeza de não querer ver mais nada aqui agora*. Entre tudo nesse universo, você é a única que jamais irei abandonar, entre todas as estrela, você é quem mais brilha minha vida✨</p>  
             </div>
-        <br><br><p style="font-size: 19px; color:#012701">Atendendo ao seu pedido, aperte aqui <a href="https://i.postimg.cc/Fzzcp5Gx/Untitled-Project-1.png" class="link-disfarcado" target="_blank">"🏡💍🤍💐".</a> Você me pedir uma casa, joias, paciencia e saúde, isso representa o casamento diretamente, um dia iremos sim. 🤗</p>
+        <br><p style="font-size: 19px; color:#012701">Atendendo ao seu pedido, aperte aqui <br><a href="https://i.postimg.cc/Fzzcp5Gx/Untitled-Project-1.png" class="link-disfarcado casal" target="_blank">"🏡💍🤍💐".</a></p> <div id="casa" style="font-size: 19px; color:#012701">Aliás me pedir uma casa, joias, paciencia e saúde, isso representa o casamento diretamente, um dia iremos sim.🤗</div>
         <div class="assinatura">
             Com amor,<br>
             Douglas Eduardo Ferreira Andrade
@@ -289,6 +302,21 @@
         });
         document.getElementById("especial-link").classList.add("animado");       
         });
+        
+        document.addEventListener("DOMContentLoaded", function () {
+        // Oculta inicialmente
+        const casaMensagem = document.getElementById("casa");
+        casaMensagem.style.display = "none";
+
+        // Mostra ao clicar no link com classe 'casal'
+        const linksCasal = document.querySelectorAll(".casal");
+        linksCasal.forEach(link => {
+            link.addEventListener("click", function () {
+                casaMensagem.style.display = "block";
+                casaMensagem.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    });
         </script>
 </body>
 </html>
