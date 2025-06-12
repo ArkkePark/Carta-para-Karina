@@ -232,7 +232,7 @@
                 <a href="https://i.postimg.cc/ZRrDm3hQ/image.png" class="link-disfarcado" id="especial-link">✨ Karina, essa carta é só um pedacinho do quanto eu te amo!</a> ❤️
                 <br><br><p> *Tem mais uma ultima imagem na frase acima, após clicar nela você tera que abrir o site todo denovo se quiser ver mais, então tenha certeza de não querer ver mais nada aqui agora*. Entre tudo nesse universo, você é a única que jamais irei abandonar, entre todas as estrela, você é quem mais brilha minha vida✨</p>  
             </div>
-        <br><br><p style="font-size: 19px; color:#012701">Atendendo ao seu pedido, aperte aqui <a href="https://i.postimg.cc/Fzzcp5Gx/Untitled-Project-1.png" class="link-disfarcado" id="casamento" target="_blank">"🏡💍🤍💐".</a><div id"casa" style="font-size: 19px; color:#012701"> Você me pedir uma casa, joias, paciencia e saúde, isso representa o casamento diretamente, um dia iremos sim. 🤗</div></p>
+        <br><br><p style="font-size: 19px; color:#012701">Atendendo ao seu pedido, aperte aqui <a href="https://i.postimg.cc/Fzzcp5Gx/Untitled-Project-1.png" class="link-disfarcado" target="_blank">"🏡💍🤍💐".</a> Você me pedir uma casa, joias, paciencia e saúde, isso representa o casamento diretamente, um dia iremos sim. 🤗</p>
         <div class="assinatura">
             Com amor,<br>
             Douglas Eduardo Ferreira Andrade
@@ -257,23 +257,6 @@
             botao.style.display = "none";
         }, 500); // tempo correspondente à animação CSS
         }
-        // Sistema para detectar os 4 cliques únicos
-        const Casamentos = document.querySelectorAll('.casamento');
-        const clicados = new Set();
-
-        Casamentos.forEach(link => {
-        link.addEventListener('click', function () {
-        clicados.add(this.href);
-
-        if (clicados.size === 1) {
-            const mensagem = document.getElementById('casa');
-            if (mensagem.style.display !== 'block') {
-                mensagem.style.display = 'block';
-                mensagem.scrollIntoView({ behavior: 'smooth' });
-              }
-            }
-            });
-        });
         // Sistema para detectar os 4 cliques únicos
         const linksSecretos = document.querySelectorAll('.link-secreto');
         const clicados = new Set();
